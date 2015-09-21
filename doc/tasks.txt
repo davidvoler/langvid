@@ -1,0 +1,6 @@
+-skip without login 1. basic login accounts
+2. editor for editing new ontent - alternative enter content using import from yaml files 
+3. main page with a list of video - simple no search by language, level yet
+4. use sllp directives for video - we need only the display. 
+
+5. - basic 

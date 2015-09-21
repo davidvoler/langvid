@@ -1,0 +1,12 @@
+<h1>Video List</h1>
+
+<div ng-repeat="video in home.videoList">
+{{video.title}}
+{{video.url}}
+</div>
+
+<div>
+<input ng-model='home.newVideo.title' placeholder='title'>
+<input ng-model='home.newVideo.url' placeholder='url'>
+<button ng-click="home.add()">Add</button>
+</div>
