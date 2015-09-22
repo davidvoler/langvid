@@ -7,10 +7,20 @@
           controller: 'HomeCtrl',
           controllerAs: 'home'
         })
-        .when('/video/:videoId', {
-          templateUrl: 'client/video/video.ng.html',
-          controller: 'VideoCtrl',
-          controllerAs: 'video'
+        .when('/video/edit/create/', {
+          templateUrl: 'client/video/video_edit.ng.html',
+          controller: 'VideoEditCtrl',
+          controllerAs: 'edit'
+        })
+        .when('/video/edit/:videoId', {
+          templateUrl: 'client/video/video_edit.ng.html',
+          controller: 'VideoEditCtrl',
+          controllerAs: 'edit'
+        })
+        .when('/video/preview/:videoId', {
+          templateUrl: 'client/video/video_preview.ng.html',
+          controller: 'VideoEditCtrl',
+          controllerAs: 'edit'
         })
         .otherwise({redirectTo: '/'});
   }

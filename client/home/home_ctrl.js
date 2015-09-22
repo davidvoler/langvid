@@ -2,6 +2,7 @@
   "use strict";
   function HomeCtrl($meteor) {
     var self = this;
+    self.tmb = 'default';
     self.videoList =  $meteor.collection(Video);
     self.newVideo = {};
     self.remove = function(video){
@@ -10,6 +11,12 @@
     self.add = function(){
     	self.videoList.push(self.newVideo);
     	self.newVideo = {};
+    };
+    self.create = function(){
+      
+    };
+    self.edit = function(video){
+
     };
 
   }

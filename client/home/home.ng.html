@@ -1,9 +1,19 @@
 <h1>Video List</h1>
 
-<div ng-repeat="video in home.videoList">
-{{video.title}}
-{{video.url}}
-</div>
+<md-content>
+<md-list>
+<md-list-item class="md-3-line" ng-repeat="video in home.videoList">
+	<youtube-video-thumb tmb="home.tmb" class='md-avatar' url="video.url"></youtube-video-thumb>
+ <div style='margin-left:100px;' >
+ <h3>{{ video.title }}</h3>
+          <h4>some sub title</h4>
+          <p>{{ video.url }}</p>
+          </div>
+</md-list-item>
+</md-list>
+</md-content>
+
+
 
 <div>
 <input ng-model='home.newVideo.title' placeholder='title'>

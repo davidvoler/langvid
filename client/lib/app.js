@@ -1,1 +1,1 @@
-angular.module('langvid', ['angular-meteor','ngRoute']);
+angular.module('langvid', ['angular-meteor','youtube-embed','ngMaterial','ngRoute']);
